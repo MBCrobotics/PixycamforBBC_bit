@@ -6,6 +6,9 @@ let pixy_rx_item_ = 0;
 let pixy_rx_get_ = 0;
 
 //% weight=0 color=#3CB371 icon="\uf03d"
+/**
+*1
+*/
 namespace Pixy_cam {
 	
 //% blockId="Pixy_cam_uart_setting" block="uart_setting"
