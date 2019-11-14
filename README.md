@@ -11,5 +11,6 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-Pixy_cam=github:MBCrobotics/pixycamforBBCbit
+Pixy_cam=github:MBCrobotics/PixycamforBBC_bit
+
 ```
