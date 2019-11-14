@@ -1,3 +1,10 @@
+let pixy_X_raw_ = 0;
+let pixy_Y_raw_ = 0;
+let pixy_W_raw_ = 0;
+let pixy_H_raw_ = 0;
+let pixy_rx_item_ = 0;
+let pixy_rx_get_ = 0;
+
 //% weight=0 color=#3CB371 icon="\uf03d"
 namespace Pixy_cam {
 	
