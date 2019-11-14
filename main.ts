@@ -19,7 +19,7 @@ namespace Pixy_cam {
 	    if (pixy_rx_item_ == 1) {
 		    pixy_X_raw_ = pixy_rx_get_ % 1000
 	    } else if (pixy_rx_item_ == 2) {
-		    pixy _Y_raw_ = pixy_rx_get_ % 1000
+		    pixy_Y_raw_ = pixy_rx_get_ % 1000
 	    } else if (pixy_rx_item_ == 3) {
 		    pixy_W_raw_ = pixy_rx_get_ % 1000
 	    } else {
