@@ -9,7 +9,7 @@ let pixy_rx_get_ = 0;
 namespace Pixy_cam {
 	
 //% blockId="Pixy_cam_uart_setting" block="uart_setting"
-//% blockGap=1 weight=1
+//% blockGap=1 weight=10
     export function Pixy_cam_uart_setting(): void {
         serial.redirect(
 		SerialPin.P14,
@@ -19,7 +19,7 @@ namespace Pixy_cam {
 	serial.setRxBufferSize(4);
     }
 //% blockId="Pixy_cam_uart_ansys" block="uart_ansys"
-//% blockGap=1 weight=2
+//% blockGap=1 weight=9
     export function Pixy_cam_uart_ansys(): void {
 	    pixy_rx_get_ = parseFloat(serial.readString());
 	    pixy_rx_item_ = Math.trunc(pixy_rx_get_ / 1000);
@@ -35,25 +35,25 @@ namespace Pixy_cam {
     }
 	
 //% blockId="Pixy_cam_uart_ansys_x" block="uart_ansys_x"
-//% blockGap=1 weight=3
+//% blockGap=1 weight=8
     export function Pixy_cam_uart_ansys_x(): number {
 	    return pixy_X_raw_;
     }
 
 //% blockId="Pixy_cam_uart_ansys_y" block="uart_ansys_y"
-//% blockGap=1 weight=4
+//% blockGap=1 weight=7
     export function Pixy_cam_uart_ansys_y(): number {
 	    return pixy_Y_raw_;
     }
 	
 //% blockId="Pixy_cam_uart_ansys_w" block="uart_ansys_w"
-//% blockGap=1 weight=5
+//% blockGap=1 weight=6
     export function Pixy_cam_uart_ansys_w(): number {
 	    return pixy_W_raw_;
     }
 
 //% blockId="Pixy_cam_uart_ansys_h" block="uart_ansys_h"
-//% blockGap=1 weight=6
+//% blockGap=1 weight=5
     export function Pixy_cam_uart_ansys_h(): number {
 	    return pixy_H_raw_;
     }
