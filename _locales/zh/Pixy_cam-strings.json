@@ -1,5 +1,5 @@
 {
-    "Pixy_cam.Pixy_cam_uart_setting|block": "啟動攝影機通訊",
+    "Pixy_cam.Pixy_cam_uart_setting|block": "啟動攝影機通訊Tx14Rx15",
     "Pixy_cam.Pixy_cam_uart_ansys|block" : "啟動攝影機分析",
     "Pixy_cam.Pixy_cam_uart_ansys_x|block" : "物體X座標",
     "Pixy_cam.Pixy_cam_uart_ansys_y|block" : "物體Y座標",
