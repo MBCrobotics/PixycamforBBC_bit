@@ -2,6 +2,9 @@ let pixy_X_raw_ = 0;
 let pixy_Y_raw_ = 0;
 let pixy_W_raw_ = 0;
 let pixy_H_raw_ = 0;
+let pixy_R_raw_ = 0;
+let pixy_G_raw_ = 0;
+let pixy_B_raw_ = 0;
 let pixy_rx_item_ = 0;
 let pixy_rx_get_ = 0;
 
@@ -32,8 +35,16 @@ namespace Pixy_cam {
 		    pixy_Y_raw_ = pixy_rx_get_ % 1000
 	    } else if (pixy_rx_item_ == 3) {
 		    pixy_W_raw_ = pixy_rx_get_ % 1000
-	    } else {
+	    } else if (pixy_rx_item_ == 4) {
 		    pixy_H_raw_ = pixy_rx_get_ % 1000
+	    } else if (pixy_rx_item_ == 5) {
+		    pixy_R_raw_ = pixy_rx_get_ % 1000
+	    } else if (pixy_rx_item_ == 6) {
+		    pixy_G_raw_ = pixy_rx_get_ % 1000
+	    } else if (pixy_rx_item_ == 7) {
+		    pixy_B_raw_ = pixy_rx_get_ % 1000
+	    } else {
+	    
 	    }
     }
 	
@@ -59,6 +70,24 @@ namespace Pixy_cam {
 //% blockGap=1 weight=5
     export function Pixy_cam_uart_ansys_h(): number {
 	    return pixy_H_raw_
+    }
+	
+//% blockId="Pixy_cam_uart_ansys_R" block="uart_ansys_r"
+//% blockGap=1 weight=4
+    export function Pixy_cam_uart_ansys_r(): number {
+	    return pixy_R_raw_
+    }
+	
+//% blockId="Pixy_cam_uart_ansys_G" block="uart_ansys_g"
+//% blockGap=1 weight=3
+    export function Pixy_cam_uart_ansys_g(): number {
+	    return pixy_G_raw_
+    }
+	
+//% blockId="Pixy_cam_uart_ansys_B" block="uart_ansys_b"
+//% blockGap=1 weight=2
+    export function Pixy_cam_uart_ansys_b(): number {
+	    return pixy_B_raw_
     }
 
 }
